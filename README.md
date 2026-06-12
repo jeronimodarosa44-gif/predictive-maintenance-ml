@@ -3,7 +3,7 @@ Modelo de Machine Learning em Python para previsão de falhas mecânicas e manut
 
 -----------------------------------------------------//----------------------------------------------------------
 
-markdown# 🔮 Predictive Maintenance ML
+🔮 Predictive Maintenance ML
 
 Uma solução de Inteligência Artificial desenvolvida em Python para previsão de falhas em ativos industriais, aplicando conceitos de Machine Learning para viabilizar estratégias de Manutenção Preditiva na Indústria 4.0.
 
