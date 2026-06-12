@@ -1,4 +1,5 @@
-pythonimport numpy as np
+# python
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -36,7 +37,7 @@ print(f"📊 Total de registros gerados: {n_registros} | Falhas mecânicas ident
 X = df.drop(columns=['falha'])  # Características/Variáveis de entrada
 y = df['falha']                 # Alvo/Target (0 = Normal, 1 = Falha Mecânica)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_test_split=0.3, random_state=42, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
 
 # 3. TREINAMENTO DO MODELO (Machine Learning)
 print("🔮 Treinando o modelo preditivo (Random Forest Classifier)...")
@@ -59,3 +60,4 @@ importâncias = modelo.feature_importances_
 print("====== IMPACTO DE VARIÁVEIS NA FALHA ======")
 for var, imp in zip(X.columns, importâncias):
     print(f"• {var}: {imp * 100:.2f}% de impacto preditivo")
+
